@@ -79,11 +79,7 @@
   border-radius: 12px;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-.satisfied-travelers {
+.satisfied-elderly {
   display: flex;
   margin-top: 8rem;
   gap: 1.6rem;
@@ -175,4 +171,119 @@
 
 .step-img {
   width: 35%;
+}
+
+/**********************************/
+/* TRAVEL PACKAGES SECTION */
+/**********************************/
+.section-usecases {
+  padding: 9.6rem 0;
+}
+
+.usecase {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.usecase:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.usecase-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.usecase-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: #333;
+  font-weight: 600px;
+}
+
+.tag--scenario1 {
+  background-color: #fbc02d;
+}
+
+.tag--scenario2 {
+  background-color: #ff6f61;
+}
+
+.usecase-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.usecase-description {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.usecase-description .home-buddy {
+  font-weight: 500;
+  color: #0466ab;
+}
+
+.usecase-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.usecase-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.usecase-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #0466ab;
+}
+
+.usecase-img {
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  flex: 0 0 auto;
+  width: 3rem;
+  height: 3rem;
+  color: #0466ab;
+}
+
+.all-usecases {
+  text-align: center;
+  font-size: 1.8rem;
 }

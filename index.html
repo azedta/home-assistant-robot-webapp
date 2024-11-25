@@ -13,6 +13,16 @@
 
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Home Buddy</title>
   </head>
   <body>
@@ -44,7 +54,7 @@
               >Find Your Buddy</a
             >
             <a href="#" class="btn btn--outline">Learn More &darr;</a>
-            <div class="satisfied-travelers">
+            <div class="satisfied-elderly">
               <div class="satisfied-imgs">
                 <img src="./img/customers/customer-1.jpg" alt="customer phto" />
                 <img src="./img/customers/customer-2.jpg" alt="customer phto" />
@@ -87,20 +97,12 @@
             </p>
           </div>
           <div class="step-img-box">
-            <img
-              class="step-img"
-              src="./img/app/app-screen-1.png"
-              alt="iPhone app preferences selection screen"
-            />
+            <img class="step-img" src="./img/app/app-screen-1.png" alt="" />
           </div>
 
           <!-- STEP 02 -->
           <div class="step-img-box">
-            <img
-              class="step-img"
-              src="./img/app/app-screen-2.png"
-              alt="meal approving plan screen"
-            />
+            <img class="step-img" src="./img/app/app-screen-2.png" alt="" />
           </div>
           <div class="step-text-box">
             <p class="step-number">02</p>
@@ -121,12 +123,91 @@
             </p>
           </div>
           <div class="step-img-box">
-            <img
-              class="step-img"
-              src="./img/app/app-screen-3.png"
-              alt="iPhone app delivery screen"
-            />
+            <img class="step-img" src="./img/app/app-screen-3.png" alt="" />
           </div>
+        </div>
+      </section>
+
+      <section class="section-usecases">
+        <div class="container center-text">
+          <span class="subheading">Use Cases</span>
+          <h2 class="heading-secondary">
+            Real-Life Scenarios with Your Home Buddy
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="usecase">
+            <img
+              class="usecase-img"
+              src="./img/scenarios/scenario1.jpg"
+              alt="Elderly Women using her laptop"
+            />
+            <div class="usecase-content">
+              <div class="usecase-tags">
+                <span class="tag tag--scenario1">Scenario 1</span>
+              </div>
+              <p class="usecase-title">Daily Support</p>
+              <blockquote class="usecase-description">
+                <q
+                  >Jane, 75, uses <span class="home-buddy">Home Buddy</span> to
+                  remind her to take her medication and carry a glass of water
+                  from the kitchen to the living room.</q
+                >
+              </blockquote>
+            </div>
+          </div>
+          <div class="usecase">
+            <img
+              class="usecase-img"
+              src="./img/scenarios/scenario2.jpg"
+              alt="Young man at his office using his laptop"
+            />
+            <div class="usecase-content">
+              <div class="usecase-tags">
+                <span class="tag tag--scenario2">Scenario 2</span>
+              </div>
+              <p class="usecase-title">Remote Connection</p>
+              <blockquote class="usecase-description">
+                <q
+                  >Jane's son monitors her health data and updates her
+                  medication schedule from his office via the
+                  <span class="home-buddy">Home Buddy</span> app.</q
+                >
+              </blockquote>
+            </div>
+          </div>
+          <div class="usecases">
+            <h3 class="heading-tertiary">Home Buddy at a Glance</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Medication reminders and dispensing</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Autonomous movement with obstacle avoidance</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Tray system for carrying essential items</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Health monitoring with caregiver alerts</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Voice recognition for commands and emergencies</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Mobile app for control and real-time monitoring</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container all-usecases">
+          <a href="#" class="link">See all use cases &rarr;</a>
         </div>
       </section>
     </main>
