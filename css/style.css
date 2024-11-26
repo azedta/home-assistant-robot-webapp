@@ -174,7 +174,7 @@
 }
 
 /**********************************/
-/* TRAVEL PACKAGES SECTION */
+/* USECASES SECTION */
 /**********************************/
 .section-usecases {
   padding: 9.6rem 0;
@@ -262,27 +262,6 @@
   width: 100%;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  flex: 0 0 auto;
-  width: 3rem;
-  height: 3rem;
-  color: #0466ab;
-}
-
 .all-usecases {
   text-align: center;
   font-size: 1.8rem;
@@ -346,4 +325,34 @@
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/**********************************/
+/* TESTIMONIALS SECTION */
+/**********************************/
+
+.section-features {
+  padding: 9.6rem 0;
+}
+
+.feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #0466ab;
+  background-color: #e6f0f7;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
