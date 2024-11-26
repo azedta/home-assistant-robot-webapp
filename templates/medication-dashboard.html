@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Medication - Dashboard</title>
+  </head>
+  <body>
+    <div class="container-dashboard">
+      <aside class="sidebar-menu">
+        <header class="sidebar-header">
+          <img
+            class="logo-sidebar"
+            src="../img/logo-lb.png"
+            alt="Home Buddy Logo"
+          />
+        </header>
+
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav-list">
+            <li class="nav-list-item">
+              <ion-icon class="nav-list-icon" name="grid-outline"></ion-icon>
+              <a class="nav-list-link" href="">Robot</a>
+            </li>
+            <li class="nav-list-item current-item">
+              <ion-icon class="nav-list-icon" name="heart"></ion-icon>
+              <a class="nav-list-link" href="">Medication</a>
+            </li>
+            <li class="nav-list-item">
+              <ion-icon
+                class="nav-list-icon"
+                name="notifications-outline"
+              ></ion-icon>
+              <a class="nav-list-link" href="#">Messages</a>
+            </li>
+            <li class="nav-list-item">
+              <ion-icon
+                class="nav-list-icon"
+                name="stats-chart-outline"
+              ></ion-icon>
+              <a class="nav-list-link" href="#">Analytics Screen</a>
+            </li>
+            <li class="nav-list-item">
+              <ion-icon
+                class="nav-list-icon"
+                name="settings-outline"
+              ></ion-icon>
+              <a class="nav-list-link" href="">Settings</a>
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="sidebar-footer">
+          <li class="nav-list-item user-item">
+            <img
+              class="user-picture"
+              src="../img/customers/dave.jpg"
+              alt="Profile Picture"
+            />
+
+            <div>
+              <p class="user-name">Aziz Tazrout</p>
+              <p class="user-location">Ottawa, ON</p>
+            </div>
+          </li>
+          <!-- <li class="nav-list-item">
+            <ion-icon class="nav-list-icon" name="flash-outline"></ion-icon>
+            <a class="nav-list-link" href="#">Support</a>
+          </li> -->
+        </footer>
+      </aside>
+
+      <main>
+        <div class="section-dashboard">
+          <header class="dashboard-header"></header>
+          <div class="dashboard-content">
+            <!-- <div class="robot-status"></div>
+            <div class="robot-activity"></div>
+            <div class="robot-control"></div>
+            <div class="robot-map"></div> -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
