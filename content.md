@@ -85,10 +85,19 @@ Scenario: Jane's son monitors her health data and updates her medication schedul
 
 - Create Account
 - Sign In
+- iOS app
+- Android app
+
 - About Home Buddy
+- For Business
+- Tech partners
 - Careers
+
+- Robot Directory
 - Privacy & Terms
 - Help Center
+
+-
 
 ### Sections
 
