@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/robot.css" />
 
     <script
       type="module"
@@ -38,11 +39,11 @@
 
         <nav class="sidebar-nav">
           <ul class="sidebar-nav-list">
-            <li class="nav-list-item">
+            <li class="nav-list-item current-item">
               <ion-icon class="nav-list-icon" name="grid-outline"></ion-icon>
               <a class="nav-list-link" href="">Robot</a>
             </li>
-            <li class="nav-list-item current-item">
+            <li class="nav-list-item">
               <ion-icon class="nav-list-icon" name="heart"></ion-icon>
               <a class="nav-list-link" href="">Medication</a>
             </li>
@@ -90,15 +91,25 @@
         </footer>
       </aside>
 
-      <main>
-        <div class="section-dashboard">
-          <header class="dashboard-header"></header>
-          <div class="dashboard-content">
-            <!-- <div class="robot-status"></div>
-            <div class="robot-activity"></div>
-            <div class="robot-control"></div>
-            <div class="robot-map"></div> -->
+      <main class="section-dashboard">
+        <header class="dashboard-header">
+          <p class="hello">Hello, Aziz</p>
+          <h3 class="heading-tertiary">Welcome to Homebuddy</h3>
+        </header>
+
+        <div class="dashboard-medication-content">
+          <!-- <div class="robot-status">
+            <p>ROBOT STATUS</p>
           </div>
+          <div class="robot-activity">
+            <p>ROBOT ACTIVITY</p>
+          </div>
+          <div class="robot-control">
+            <p>ROBOT CONTROL</p>
+          </div>
+          <div class="robot-map">
+            <p>ROBOT MAP</p>
+          </div> -->
         </div>
       </main>
     </div>

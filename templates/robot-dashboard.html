@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/robot.css" />
 
     <script
       type="module"
@@ -90,14 +91,167 @@
         </footer>
       </aside>
 
-      <main>
-        <div class="section-dashboard">
-          <header class="dashboard-header"></header>
-          <div class="dashboard-content">
-            <div class="robot-status"></div>
-            <div class="robot-activity"></div>
-            <div class="robot-control"></div>
-            <div class="robot-map"></div>
+      <main class="section-dashboard">
+        <header class="dashboard-header">
+          <div class="welcome-message">
+            <p class="hello">Hello, Aziz</p>
+            <h3 class="heading-tertiary">Welcome to Homebuddy</h3>
+          </div>
+        </header>
+
+        <div class="dashboard-robot-content">
+          <div class="robot-status">
+            <div class="robot-status-container">
+              <div class="robot-img-box">
+                <img class="robot-img" src="../img/robot/robot.png" alt="" />
+              </div>
+
+              <div class="robot-info">
+                <div class="info-header">
+                  <div>
+                    <p class="robot-title">Home Buddy v1</p>
+                    <p class="robot-code">LEO-4523124-VAC</p>
+                  </div>
+                  <p class="robot-active">Active</p>
+                </div>
+
+                <div class="robot-states">
+                  <div class="robot-state">
+                    <ion-icon
+                      class="robot-state-icon"
+                      name="options-outline"
+                    ></ion-icon>
+                    <p class="robot-state-title">Status</p>
+                    <p class="robot-state-value">Delivering</p>
+                  </div>
+                  <div class="robot-state">
+                    <ion-icon
+                      class="robot-state-icon"
+                      name="battery-charging-outline"
+                    ></ion-icon>
+                    <p class="robot-state-title">Battery</p>
+                    <p class="robot-state-value">90%</p>
+                  </div>
+                  <div class="robot-state">
+                    <ion-icon
+                      class="robot-state-icon"
+                      name="phone-landscape-outline"
+                    ></ion-icon>
+                    <p class="robot-state-title">Tray</p>
+                    <p class="robot-state-value">UP</p>
+                  </div>
+                  <div class="robot-state">
+                    <ion-icon
+                      class="robot-state-icon"
+                      name="radio-outline"
+                    ></ion-icon>
+                    <p class="robot-state-title">Sensors</p>
+                    <p class="robot-state-value">ON</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="robot-map">
+            <div class="robot-map-container">
+              <p class="robot-map-title robot-title">Location</p>
+              <img
+                class="robot-map-img"
+                src="../img/robot/map.jpg"
+                alt="Picture of the map"
+              />
+              <div class="robot-map-"></div>
+              <p class="robot-map-address">
+                157 Nepean Street, Ottawa - Room A
+              </p>
+            </div>
+          </div>
+
+          <div class="robot-activity">
+            <div class="robot-activity-container">
+              <div class="recent-activity">
+                <p class="robot-activity-title robot-title">Recent Activity</p>
+                <ul class="recent-activity-list">
+                  <li>
+                    <ion-icon
+                      class="activity-icon"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <p class="activty-name">Move from Kitchen to Room A</p>
+                    <p class="activity-time">07:00 am</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      class="activity-icon"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <p class="activty-name">Move Tray Up</p>
+                    <p class="activity-time">08:00 am</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      class="activity-icon"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <p class="activty-name">Dispense Medication</p>
+                    <p class="activity-time">09:00 am</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      class="activity-icon"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <p class="activty-name">Move back to station</p>
+                    <p class="activity-time">10:00 am</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      class="activity-icon"
+                      name="checkmark-circle"
+                    ></ion-icon>
+                    <p class="activty-name">Move Tray Down</p>
+                    <p class="activity-time">11:00 am</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="robot-efficiency">
+                <div>
+                  <p class="robot-efficiency-title robot-title">
+                    Robot Efficiency
+                  </p>
+                  <p class="month">November &darr;</p>
+                </div>
+                <div class="robot-efficiency-chart">
+                  <img
+                    src="../img/robot/efficiency-chart.png"
+                    alt="Robot Efficiency Chart"
+                  />
+                  <ul class="chart-legend">
+                    <li>
+                      <ion-icon name="square" style="color: #2d8bba"></ion-icon>
+                      <p>Pill Dispensing</p>
+                    </li>
+                    <li>
+                      <ion-icon name="square" style="color: #31356e"></ion-icon>
+                      <p>Tray Mechanism</p>
+                    </li>
+                    <li>
+                      <ion-icon name="square" style="color: #6ce5e8"></ion-icon>
+                      <p>Obstacle Avoidance</p>
+                    </li>
+                    <li>
+                      <ion-icon name="square" style="color: #41b8d5"></ion-icon>
+                      <p>Notification System</p>
+                    </li>
+                    <li>
+                      <ion-icon name="square" style="color: #41b8d5"></ion-icon>
+                      <p>Sensor Accuracy</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>

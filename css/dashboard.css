@@ -5,20 +5,33 @@
 .container-dashboard {
   height: 100vh;
   display: grid;
-  grid-template-columns: 20fr 80fr;
+  grid-template-columns: 27rem auto;
+  gap: 3rem;
   background-color: #e6f0f7;
+}
+
+.sidebar-menu {
+  grid-column: 1/2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 27rem;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15fr 75fr 10fr;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.section-dashboard {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 15fr 85fr;
 }
 
 /**********************************/
 /* SIDEBAR MENU */
 /**********************************/
-.sidebar-menu {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 15fr 75fr 10fr;
-  background-color: #fff;
-}
-
 .sidebar-header {
   border-bottom: 2px solid #eee;
 }
@@ -104,14 +117,18 @@
 /**********************************/
 /* DASHBOARD SECTION */
 /**********************************/
-.section-dashboard {
-  /* MIGHT HAVE SOMETHING HERE*/
-}
 
 .dashboard-header {
-  /* MIGHT HAVE SOMETHING HERE*/
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2.4rem;
 }
 
-.dashboard-content {
-  /* MIGHT HAVE SOMETHING HERE*/
+.hello {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 0.8rem;
 }
