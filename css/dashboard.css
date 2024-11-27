@@ -120,9 +120,6 @@
 
 .dashboard-header {
   padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-right: 2.4rem;
 }
 
