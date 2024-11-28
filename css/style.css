@@ -1,0 +1,517 @@
+/**********************************/
+/* HEADER */
+/**********************************/
+.header {
+  background-color: #e6f0f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 4.2rem;
+}
+/**********************************/
+/* NAVIGATION */
+/**********************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #0466ab;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #0466ab;
+  color: #fff;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #045c9a;
+}
+/**********************************/
+/* HERO SECTION */
+/**********************************/
+
+.section-hero {
+  background-color: #e6f0f7;
+  padding: 1.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.satisfied-elderly {
+  display: flex;
+  margin-top: 8rem;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.satisfied-imgs {
+  display: flex;
+}
+
+.satisfied-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #e6f0f7;
+}
+
+.satisfied-imgs img:last-child {
+  margin: 0;
+}
+
+.satisfied-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.satisfied-text span {
+  color: #045c9a;
+  font-weight: 700;
+}
+
+/**********************************/
+/* HOW IT WORKS SECTION */
+/**********************************/
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 100%;
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; -- SIMPLY ADD PADDING BOTTON INSTEAD */
+  /* 60% of parent's width*/
+  padding-bottom: 60%;
+  background-color: #e6f0f7;
+  z-index: -5;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #cde0ee;
+  z-index: -1;
+}
+
+.step-img {
+  width: 70%;
+}
+
+/**********************************/
+/* USECASES SECTION */
+/**********************************/
+.section-usecases {
+  padding: 9.6rem 0;
+}
+
+.usecase {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.usecase:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.usecase-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.usecase-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: #333;
+  font-weight: 600px;
+}
+
+.tag--scenario1 {
+  background-color: #fbc02d;
+}
+
+.tag--scenario2 {
+  background-color: #ff6f61;
+}
+
+.usecase-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.usecase-description {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.usecase-description .home-buddy {
+  font-weight: 500;
+  color: #0466ab;
+}
+
+.usecase-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.usecase-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.usecase-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #0466ab;
+}
+
+.usecase-img {
+  width: 100%;
+}
+
+.all-usecases {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/**********************************/
+/* TESTIMONIALS SECTION */
+/**********************************/
+
+.section-testimonials {
+  background-color: #e6f0f7;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  pad: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+  filter: grayscale(5%);
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/**********************************/
+/* FEATURES SECTION */
+/**********************************/
+
+.section-features {
+  padding: 9.6rem 0;
+}
+
+.feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #0466ab;
+  background-color: #e6f0f7;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/**********************************/
+/* CTA SECTION */
+/**********************************/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #3685bc, #0466ab);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #011f33;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(54, 132, 188, 0.35),
+      rgba(4, 101, 171, 0.35)
+    ),
+    url("../img/cta.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  background-color: #e6f0f7;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba(230, 240, 247, 0.35);
+}
+
+/**********************************/
+/* FOOTER*/
+/**********************************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 100%;
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}

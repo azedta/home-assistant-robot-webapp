@@ -1,0 +1,131 @@
+/**********************************/
+/* VIEWPORT  CONTAINER */
+/**********************************/
+
+.container-dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 27rem auto;
+  gap: 3rem;
+  background-color: #e6f0f7;
+}
+
+.sidebar-menu {
+  grid-column: 1/2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 27rem;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15fr 75fr 10fr;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.section-dashboard {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 15fr 85fr;
+}
+
+/**********************************/
+/* SIDEBAR MENU */
+/**********************************/
+.sidebar-header {
+  border-bottom: 2px solid #eee;
+}
+
+.logo-sidebar {
+  display: inline-block;
+  width: 60%;
+  margin: 3.2em 0 0 4rem;
+}
+
+.sidebar-nav {
+  margin: 3.2rem 0 0 4rem;
+}
+
+.sidebar-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 0.7rem 0;
+  color: #999;
+}
+
+.current-item {
+  color: #222;
+  border-right: 4px solid #1298f8;
+}
+
+.nav-list-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #1298f8;
+}
+
+.nav-list-link:link,
+.nav-list-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.nav-list-link:hover,
+.nav-list-link:active {
+  color: #222;
+}
+
+.sidebar-footer {
+  margin: 0 0 0 4rem;
+}
+
+.user-item {
+  margin-bottom: 1.4rem;
+}
+
+.user-picture {
+  display: inline-block;
+  width: 15%;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  color: #777;
+}
+
+.user-location {
+  font-size: 1.3rem;
+}
+
+/**********************************/
+/* DASHBOARD SECTION */
+/**********************************/
+
+.dashboard-header {
+  padding-top: 2rem;
+  margin-right: 2.4rem;
+}
+
+.hello {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 0.8rem;
+}

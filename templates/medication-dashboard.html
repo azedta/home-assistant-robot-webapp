@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/medication.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Medication - Dashboard</title>
+  </head>
+  <body>
+    <div class="container-dashboard">
+      <aside class="sidebar-menu">
+        <header class="sidebar-header">
+          <img
+            class="logo-sidebar"
+            src="../img/logo-lb.png"
+            alt="Home Buddy Logo"
+          />
+        </header>
+
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav-list">
+            <li class="nav-list-item">
+              <ion-icon class="nav-list-icon" name="grid-outline"></ion-icon>
+              <a class="nav-list-link" href="robot-dashboard.html">Robot</a>
+            </li>
+            <li class="nav-list-item current-item">
+              <ion-icon class="nav-list-icon" name="heart"></ion-icon>
+              <a class="nav-list-link" href="medication-dashboard.html"
+                >Medication</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <ion-icon
+                class="nav-list-icon"
+                name="notifications-outline"
+              ></ion-icon>
+              <a class="nav-list-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-list-item">
+              <ion-icon
+                class="nav-list-icon"
+                name="stats-chart-outline"
+              ></ion-icon>
+              <a class="nav-list-link" href="#">Analytics Screen</a>
+            </li>
+            <li class="nav-list-item">
+              <ion-icon
+                class="nav-list-icon"
+                name="settings-outline"
+              ></ion-icon>
+              <a class="nav-list-link" href="">Settings</a>
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="sidebar-footer">
+          <li class="nav-list-item user-item">
+            <img
+              class="user-picture"
+              src="../img/customers/dave.jpg"
+              alt="Profile Picture"
+            />
+
+            <div>
+              <p class="user-name">Aziz Tazrout</p>
+              <p class="user-location">Ottawa, ON</p>
+            </div>
+          </li>
+          <!-- <li class="nav-list-item">
+            <ion-icon class="nav-list-icon" name="flash-outline"></ion-icon>
+            <a class="nav-list-link" href="#">Support</a>
+          </li> -->
+        </footer>
+      </aside>
+
+      <main class="section-dashboard">
+        <header class="dashboard-header">
+          <div class="welcome-message">
+            <p class="hello">Hello, Aziz</p>
+            <h3 class="heading-tertiary">Welcome to Homebuddy</h3>
+          </div>
+        </header>
+
+        <div class="dashboard-medication-content">
+          <div class="pill-notification">
+            <p class="notification-subheading">Notifications</p>
+            <div class="notification-container">
+              <ion-icon
+                class="notification-icon"
+                name="mail-unread-outline"
+              ></ion-icon>
+              <h3 class="notification-message">
+                It's time for you to take your Pill
+              </h3>
+            </div>
+            <div class="notification-dateandtime">
+              <p class="notication-date">29 November</p>
+              <p class="notification-time">9:30 AM</p>
+            </div>
+          </div>
+
+          <div class="medication-schedule">
+            <div class="medication-schedule-container">
+              <p class="calendar-title medication-title align-flex-start">
+                Calendar
+              </p>
+              <div class="calendar">
+                <div class="datepicker">
+                  <div class="datepicker-top">
+                    <div class="btn-group">
+                      <button class="tag">Today</button>
+                      <button class="tag">Tomorrow</button>
+                      <button class="tag">In 2 days</button>
+                    </div>
+                    <div class="month-selector">
+                      <button class="arrow">
+                        <ion-icon name="arrow-back-circle"></ion-icon>
+                      </button>
+                      <span class="month-name">November 2024</span>
+                      <button class="arrow">
+                        <ion-icon name="arrow-forward-circle"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="datepicker-calendar">
+                    <span class="day">Mo</span>
+                    <span class="day">Tu</span>
+                    <span class="day">We</span>
+                    <span class="day">Th</span>
+                    <span class="day">Fr</span>
+                    <span class="day">Sa</span>
+                    <span class="day">Su</span>
+                    <button class="date faded">30</button>
+                    <button class="date">1</button>
+                    <button class="date">2</button>
+                    <button class="date">3</button>
+                    <button class="date">4</button>
+                    <button class="date">5</button>
+                    <button class="date">6</button>
+                    <button class="date">7</button>
+                    <button class="date">8</button>
+                    <button class="date">9</button>
+                    <button class="date">10</button>
+                    <button class="date">11</button>
+                    <button class="date">12</button>
+                    <button class="date">13</button>
+                    <button class="date">14</button>
+                    <button class="date">15</button>
+                    <button class="date">16</button>
+                    <button class="date">17</button>
+                    <button class="date">18</button>
+                    <button class="date">19</button>
+                    <button class="date">20</button>
+                    <button class="date">21</button>
+                    <button class="date">22</button>
+                    <button class="date">23</button>
+                    <button class="date">24</button>
+                    <button class="date">25</button>
+                    <button class="date">26</button>
+                    <button class="date">27</button>
+                    <button class="date">28</button>
+                    <button class="date current-day">29</button>
+                    <button class="date">30</button>
+                    <button class="date">31</button>
+                    <button class="date faded">1</button>
+                    <button class="date faded">2</button>
+                    <button class="date faded">3</button>
+                  </div>
+                </div>
+              </div>
+
+              <p class="schedule-title medication-title align-flex-start">
+                Schedule
+              </p>
+              <div class="schedule">
+                <div>
+                  <div class="schedule-card">
+                    <div class="left">
+                      <p class="card-tag">Fever</p>
+                      <p class="card-title">Medication - Vitalium</p>
+                    </div>
+                    <div class="right">
+                      <ion-icon
+                        class="card-dots"
+                        name="ellipsis-horizontal"
+                      ></ion-icon>
+                      <p class="card-date">29 november</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dispenser-info">
+            <p class="dispenser-title medication-title">Dispenser</p>
+            <div class="dispenser-container">
+              <img
+                class="dispenser-img"
+                src="../img/medications/dispenser.png"
+                alt="Pill Dispenser"
+              />
+              <div>
+                <p class="dispenser-status-title">Status</p>
+                <ul class="dispenser-status-list">
+                  <li class="dispenser-status-state">
+                    <ion-icon
+                      class="state-icon"
+                      name="pause-outline"
+                    ></ion-icon>
+                    <p class="state-name">On Hold</p>
+                  </li>
+                  <li class="dispenser-status-state">
+                    <ion-icon class="state-icon" name="add-outline"></ion-icon>
+                    <p class="state-name">Increment</p>
+                  </li>
+                  <li class="dispenser-status-state">
+                    <ion-icon
+                      class="state-icon state-icon--curent"
+                      name="file-tray-full-outline"
+                    ></ion-icon>
+                    <p class="state-name state-name--current">Dispense</p>
+                  </li>
+
+                  <li class="dispenser-status-state">
+                    <ion-icon
+                      class="state-icon"
+                      name="lock-open-outline"
+                    ></ion-icon>
+                    <p class="state-name">Open</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="pill-title medication-title">Pill Types</p>
+            <div class="pill-container">
+              <ul class="pill-list">
+                <div class="pill-list-horizontal">
+                  <li>
+                    <ion-icon
+                      name="radio-button-on"
+                      style="color: #fbc02d"
+                    ></ion-icon>
+                    <p>Vitalium</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      name="radio-button-on"
+                      style="color: #fbc02d"
+                    ></ion-icon>
+                    <p>Respirol</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      name="radio-button-on"
+                      style="color: #fbc02d"
+                    ></ion-icon>
+                    <p>Neurolex</p>
+                  </li>
+                </div>
+                <div class="pill-list-horizontal">
+                  <li>
+                    <ion-icon
+                      name="radio-button-on"
+                      style="color: #ff6f61"
+                    ></ion-icon>
+                    <p>Tranquil</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      name="radio-button-on"
+                      style="color: #ff6f61"
+                    ></ion-icon>
+                    <p>Cardioix</p>
+                  </li>
+                  <li>
+                    <ion-icon
+                      name="radio-button-on"
+                      style="color: #ff6f61"
+                    ></ion-icon>
+                    <p>Curoheal</p>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
