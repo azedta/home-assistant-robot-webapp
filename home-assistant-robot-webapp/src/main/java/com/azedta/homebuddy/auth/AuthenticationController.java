@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name="Authentication")
 public class AuthenticationController {
 
-    private final AuthenticationServie service;
+    private final AuthenticationService service;
 
     @PostMapping("/register")
     @ResponseStatus(HttpStatus.ACCEPTED)
