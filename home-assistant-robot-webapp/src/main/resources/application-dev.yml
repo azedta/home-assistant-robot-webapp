@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/home_buddy
-    username: username
-    password: password
+    username: postgres
+    password: azed123
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -32,7 +32,7 @@ spring:
 application:
   security:
     jwt:
-      secret-key: N77lPKqQG2mOTo3VYuzSUyIEwJWy8sUC
+      secret-key: N77lPKqQG2mOTo3VYuzSUyIEwJWy8sUCkJSHDRx0z4YlSDjafF6rTUedcY6KD8fi
       expiration: 8640000
   mailing:
     frontend:
